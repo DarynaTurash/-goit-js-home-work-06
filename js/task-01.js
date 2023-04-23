@@ -3,7 +3,7 @@ console.log(`Number of categories: ${allItemsRef.length}`);
 
 allItemsRef.forEach(titleAndAmount => {
     console.log(`Category: ${titleAndAmount.firstElementChild.textContent}`);
-    console.log(`Elements: ${titleAndAmount.lastElementChild.querySelectorAll("li").length}`);
+    console.log(`Elements: ${titleAndAmount.lastElementChild.children.length}`);
 });
 
 
